@@ -25,6 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      # This comment is just to add a new commit and trigger this
       - name: Run markdown lint
         run: |
           npm install remark-cli remark-preset-lint-consistent
